@@ -100,24 +100,37 @@
 #define PORT_F_PIN_4                        (Port_PinType)4
 
 /* Configured Modes IDs */
-#define DIO_MODE                                 (Port_PinModeType)0
-#define ADC_0_MODE                               (Port_PinModeType)1
-#define ADC_1_MODE                               (Port_PinModeType)2
-#define PWM_0_MODE                               (Port_PinModeType)3
-#define PWM_1_MODE                               (Port_PinModeType)4
+#define DIO_MODE                            (Port_PinModeType)0
+#define ADC_MODE                            (Port_PinModeType)1
+#define UART_MODE                           (Port_PinModeType)2
+#define SSI_MODE                            (Port_PinModeType)3
+#define I2C_MODE                            (Port_PinModeType)4
+#define CAN_MODE                            (Port_PinModeType)5
+#define M0_PWM_MODE                         (Port_PinModeType)6
+#define M1_PWM_MODE                         (Port_PinModeType)7
+#define GPT_MODE                            (Port_PinModeType)8
+#define WIDE_GPT_MODE                       (Port_PinModeType)9
 
 /* Dio mode set value in PCTL register */
-#define PORT_PIN_CONFIG_MODE_DIO_SET                (0x0)
-/* ADC 0 mode set value in RCGCADC register */
-#define PORT_PIN_CONFIG_MODE_ADC_0_SET              (0x1)
-/* ADC 1 mode set value in RCGCADC register */
-#define PORT_PIN_CONFIG_MODE_ADC_1_SET              (0x2)
-/* PWM 0 mode set value in RCGCPWM register */
-#define PORT_PIN_CONFIG_MODE_PWM_0_SET              (0x1)
-/* PWM 1 mode set value in RCGCPWM register */
-#define PORT_PIN_CONFIG_MODE_PWM_1_SET              (0x2)
-/* PWM mode set value in PCTL register */
-#define PORT_PIN_CONFIG_MODE_PWM_PCTL_SET         (0x5)
+#define PORT_PIN_CONFIG_MODE_DIO_SET                            (0x0)
+/* UART mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_UART_SET                           (0x1)
+/* SSI mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_SSI_SET                            (0x2)
+/* I2C mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_I2C_SET                            (0x3)
+/* CAN mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_CAN_SET_1                          (0x8)
+/* CAN mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_CAN_SET_2                          (0x3)
+/* PWM M0 mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_PWM_M0_PCTL_SET                    (0x4)
+/* PWM M1 mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_PWM_M1_PCTL_SET                    (0x5)
+/* General purpose timer mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_GPT_PCTL_SET                       (0x7)
+/* Wide General purpose timer mode set value in PCTL register */
+#define PORT_PIN_CONFIG_MODE_WIDE_GPT_PCTL_SET                  (0x7)
 
 
 /* Default pin configuratons */
